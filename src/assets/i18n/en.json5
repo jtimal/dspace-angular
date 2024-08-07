@@ -6739,4 +6739,13 @@
   "item.page.cc.license.disclaimer": "Except where otherwised noted, this item's license is described as",
 
   "browse.search-form.placeholder": "Search the repository",
+
+  "favorites.view": "My List",
+  "favorites.delete": "Clear my list",
+  "favorites.add": "Add to my list",
+  "favorites.remove": "Remove from my list",
+  "favorites.items": "My List",
+  "favorites.info": "My favorite items from the repository",
+  "favorites.error.title": "Your list is empty",
+  "favorites.error.content": "You can add items to your list on the search pages.",
 }

@@ -10,6 +10,7 @@ import { ThemedAccessStatusBadgeComponent } from './access-status-badge/themed-a
 import { ThemedMyDSpaceStatusBadgeComponent } from './my-dspace-status-badge/themed-my-dspace-status-badge.component';
 import { ThemedStatusBadgeComponent } from './status-badge/themed-status-badge.component';
 import { ThemedTypeBadgeComponent } from './type-badge/themed-type-badge.component';
+import { ThemedFavoritesBadgeComponent } from './favorites-badge/themed-favorites-badge.component';
 
 /**
  * List of MyDSpace Status Contexts
@@ -32,7 +33,7 @@ const MY_DSPACE_STATUS_CONTEXTS = [
   templateUrl: './badges.component.html',
   styleUrls: ['./badges.component.scss'],
   standalone: true,
-  imports: [ThemedStatusBadgeComponent, NgIf, ThemedMyDSpaceStatusBadgeComponent, ThemedTypeBadgeComponent, ThemedAccessStatusBadgeComponent],
+  imports: [ThemedStatusBadgeComponent, NgIf, ThemedMyDSpaceStatusBadgeComponent, ThemedTypeBadgeComponent, ThemedAccessStatusBadgeComponent, ThemedFavoritesBadgeComponent],
 })
 export class BadgesComponent {
   /**
@@ -54,5 +55,12 @@ export class BadgesComponent {
    */
   get isMyDSpaceStatus(): boolean {
     return MY_DSPACE_STATUS_CONTEXTS.includes(this.context);
+  }
+
+  /**
+   * Returns whether or not display the favorites badge
+   */
+  showFavorites(): boolean {
+    return this.object.hasMetadata('dc.identifier.uri');
   }
 }

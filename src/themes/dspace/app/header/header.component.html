@@ -14,6 +14,18 @@
     </div>
     <!-- Search bar and other menus -->
     <div id="header-right" class="h-100 d-flex flex-row flex-nowrap justify-content-end align-items-center gapx-1 ml-auto">
+      <div class="favorites-section ml-auto d-flex">
+        <a (click)="favorites.redirectToFavoritesPage()" class="d-flex favorites-btn pl-2" [ngbTooltip]="('favorites.info' | translate)">
+          <i class="fas fa-bookmark fa-lg favorites-icon"></i>
+          <span>{{'favorites.view' | translate}}</span>
+          [{{favorites.countElements()}}]
+        </a>
+        <a (click)="favorites.removeAllHandles()" class="d-flex favorites-btn"
+          [attr.aria-label]="('favorites.delete' | translate)" [ngbTooltip]="('favorites.delete' | translate)">
+          <i class="fas fa-trash fa-lg favorites-icon"></i>
+          <span class="d-lg-none d-md-none">{{'favorites.delete' | translate}}</span>
+        </a>
+      </div>
       <ds-search-navbar></ds-search-navbar>
       <div role="menubar" class="h-100 d-flex flex-row flex-nowrap align-items-center gapx-1">
         <ds-lang-switch></ds-lang-switch>

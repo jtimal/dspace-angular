@@ -4,6 +4,9 @@
 </ng-container>
 <div>
     <ds-type-badge class="pr-1" [object]="object"></ds-type-badge>
+    <ng-container *ngIf="showFavorites()">
+        <ds-favorites-badge [object]="object"></ds-favorites-badge>
+    </ng-container>
     <ng-container *ngIf="showAccessStatus">
         <ds-access-status-badge [object]="object"></ds-access-status-badge>
     </ng-container>

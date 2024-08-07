@@ -25,4 +25,24 @@
     }
   }
 
+  .favorites-section {
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .favorites-btn {
+    cursor: pointer;
+    width: max-content;
+    align-items: center;
+    color: var(--ds-header-icon-color);
+  
+    &:hover {
+      color: var(--ds-header-icon-color-hover);
+    }
+  }
+  
+  .favorites-icon{
+    padding-right: 5px;
+  }
+
 }

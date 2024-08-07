@@ -102,6 +102,7 @@ import { ThumbnailComponent } from './app/thumbnail/thumbnail.component';
 import { WorkflowItemDeleteComponent } from './app/workflowitems-edit-page/workflow-item-delete/workflow-item-delete.component';
 import { WorkflowItemSendBackComponent } from './app/workflowitems-edit-page/workflow-item-send-back/workflow-item-send-back.component';
 import { WorkspaceItemsDeletePageComponent } from './app/workspaceitems-edit-page/workspaceitems-delete-page/workspaceitems-delete-page.component';
+import { FavoritesBadgeComponent } from 'src/app/shared/object-collection/shared/badges/favorites-badge/favorites-badge.component';
 
 const DECLARATIONS = [
   FileSectionComponent,
@@ -163,6 +164,7 @@ const DECLARATIONS = [
   BadgesComponent,
   StatusBadgeComponent,
   TypeBadgeComponent,
+  FavoritesBadgeComponent,
   MyDSpaceStatusBadgeComponent,
   AccessStatusBadgeComponent,
   ResultsBackButtonComponent,
