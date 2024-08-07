@@ -30,6 +30,7 @@ import { ListableObject } from '../../object-collection/shared/listable-object.m
 import { PaginatedSearchOptions } from '../models/paginated-search-options.model';
 import { SearchResult } from '../models/search-result.model';
 import { SearchExportCsvComponent } from '../search-export-csv/search-export-csv.component';
+import { FavoritesService } from '../../favorites.service';
 
 export interface SelectionConfig {
   repeatable: boolean;
@@ -124,6 +125,9 @@ export class SearchResultsComponent {
   @Output() deselectObject: EventEmitter<ListableObject> = new EventEmitter<ListableObject>();
 
   @Output() selectObject: EventEmitter<ListableObject> = new EventEmitter<ListableObject>();
+
+  constructor(public favorites: FavoritesService){
+  }
 
   /**
    * Check if search results are loading

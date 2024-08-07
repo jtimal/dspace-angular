@@ -29,6 +29,7 @@ import { ThemedSearchFormComponent } from '../shared/search-form/themed-search-f
 import { PageWithSidebarComponent } from '../shared/sidebar/page-with-sidebar.component';
 import { SidebarService } from '../shared/sidebar/sidebar.service';
 import { ViewModeSwitchComponent } from '../shared/view-mode-switch/view-mode-switch.component';
+import { FavoritesService } from '../shared/favorites.service';
 
 /**
  * This component renders a search page using a configuration as input.
@@ -57,7 +58,8 @@ export class ConfigurationSearchPageComponent extends SearchComponent {
               protected routeService: RouteService,
               protected router: Router,
               @Inject(APP_CONFIG) protected appConfig: AppConfig,
+              public favorites: FavoritesService,
   ) {
-    super(service, sidebarService, windowService, searchConfigService, routeService, router, appConfig);
+    super(service, sidebarService, windowService, searchConfigService, routeService, router, appConfig, favorites);
   }
 }
