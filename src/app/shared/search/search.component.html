@@ -88,7 +88,7 @@
 </ng-template>
 
 <ng-template #searchForm>
-    <ds-search-form id="search-form"
+    <ds-search-form *ngIf="!favorites.isTheCurrentUrlTheFavoritesPage()" id="search-form"
                     [query]="(searchOptions$ | async)?.query"
                     [scope]="(searchOptions$ | async)?.scope"
                     [hideScopeInUrl]="hideScopeInUrl"
