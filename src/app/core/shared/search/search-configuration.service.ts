@@ -183,7 +183,7 @@ export class SearchConfigurationService implements OnDestroy {
    */
   getCurrentQuery(defaultQuery: string) {
     return this.routeService.getQueryParameterValue('query').pipe(map((query) => {
-      return query !== null ? query : defaultQuery; // Allow querying when the value is empty
+      return query || defaultQuery;
     }));
   }
 
