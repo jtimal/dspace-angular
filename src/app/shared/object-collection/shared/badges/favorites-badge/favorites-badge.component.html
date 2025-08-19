@@ -1,0 +1,5 @@
+<a href="javascript:void(0)" class="badge badge-info"
+    (click) = "isInFavorites(object.firstMetadataValue('dc.identifier.uri')) ? onRemoveItem(object.firstMetadataValue('dc.identifier.uri')) : onSaveItem(object.firstMetadataValue('dc.identifier.uri'))" >
+    <i [ngClass]="isInFavorites(object.firstMetadataValue('dc.identifier.uri')) ? 'fas fa-ban' : 'fas fa-bookmark iconlist'" > </i>
+    {{ "favorites." + (isInFavorites(object.firstMetadataValue('dc.identifier.uri')) ? 'remove' : 'add') | translate }}
+</a>

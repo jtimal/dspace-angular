@@ -7207,4 +7207,14 @@
   "metadata-export-search.submit.error.limit-exceeded": "Only the first {{limit}} items will be exported",
 
   "file-download-link.request-copy": "Request a copy of ",
+
+  "favorites.view": "My List",
+  "favorites.delete": "Clear my list",
+  "favorites.add": "Add to my list",
+  "favorites.remove": "Remove from my list",
+  "favorites.items": "My List",
+  "favorites.info": "My favorite items from the repository",
+  "favorites.error.title": "Your list is empty",
+  "favorites.error.content": "You can add items to your list on the search pages.",
+
 }

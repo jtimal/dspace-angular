@@ -10790,6 +10790,7 @@
   // "browse.search-form.placeholder": "Search the repository",
   "browse.search-form.placeholder": "Buscar en el repositorio",
 
+
   // "file-download-link.download": "Download ",
   "file-download-link.download": "Descargar ",
 
@@ -10975,5 +10976,14 @@
   // TODO New key - Add a translation
   "file-download-link.request-copy": "Request a copy of ",
 
+
+  "favorites.view": "Mi Lista",
+  "favorites.delete": "Vaciar mi lista",
+  "favorites.add": "Agregar a mi lista",
+  "favorites.remove": "Eliminar de mi lista",
+  "favorites.items": "Mi Lista",
+  "favorites.info": "Mis elementos favoritos del repositorio",
+  "favorites.error.title": "Tu lista está vacía",
+  "favorites.error.content": "Puedes agregar ítems a tu lista en las páginas de búsqueda.",
 
 }

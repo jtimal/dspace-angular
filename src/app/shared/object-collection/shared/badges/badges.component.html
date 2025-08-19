@@ -3,8 +3,13 @@
   <ds-my-dspace-status-badge [context]="context"></ds-my-dspace-status-badge>
 }
 <div>
+
   <ds-type-badge class="pe-1" [object]="object"></ds-type-badge>
+  <ng-container *ngIf="showFavorites()">
+        <ds-favorites-badge [object]="object"></ds-favorites-badge>
+    </ng-container>
   @if (showAccessStatus) {
     <ds-access-status-badge [object]="object"></ds-access-status-badge>
   }
+
 </div>
