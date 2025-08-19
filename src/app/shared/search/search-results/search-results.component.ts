@@ -42,7 +42,6 @@ import { SearchFilter } from '../models/search-filter.model';
 import { SearchResult } from '../models/search-result.model';
 import { SearchExportCsvComponent } from '../search-export-csv/search-export-csv.component';
 import { SearchResultsSkeletonComponent } from './search-results-skeleton/search-results-skeleton.component';
-import { FavoritesService } from '../../favorites.service';
 
 export interface SelectionConfig {
   repeatable: boolean;
@@ -158,15 +157,12 @@ export class SearchResultsComponent {
 
   @Output() selectObject: EventEmitter<ListableObject> = new EventEmitter<ListableObject>();
 
-
   constructor(
     protected searchConfigService: SearchConfigurationService,
     protected searchService: SearchService,
-    public favorites: FavoritesService,
   ) {
     this.activeFilters$ = this.searchConfigService.getCurrentFilters();
     this.appliedFilters$ = this.searchService.appliedFilters$;
-
   }
 
   /**

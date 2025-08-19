@@ -10432,12 +10432,4 @@
   "metadata-export-search.submit.error.limit-exceeded": "Only the first {{limit}} items will be exported",
 
 
-  "favorites.view": "Mi Lista",
-  "favorites.delete": "Vaciar mi lista",
-  "favorites.add": "Agregar a mi lista",
-  "favorites.remove": "Eliminar de mi lista",
-  "favorites.items": "Mi Lista",
-  "favorites.info": "Mis elementos favoritos del repositorio",
-  "favorites.error.title": "Tu lista está vacía",
-  "favorites.error.content": "Puedes agregar ítems a tu lista en las páginas de búsqueda.",
 }

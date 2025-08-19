@@ -83,7 +83,6 @@ import { SelectionConfig } from './search-results/search-results.component';
 import { ThemedSearchResultsComponent } from './search-results/themed-search-results.component';
 import { ThemedSearchSidebarComponent } from './search-sidebar/themed-search-sidebar.component';
 import { SearchConfigurationOption } from './search-switch-configuration/search-configuration-option.model';
-import { FavoritesService } from '../favorites.service';
 
 @Component({
   selector: 'ds-base-search',
@@ -356,7 +355,6 @@ export class SearchComponent implements OnDestroy, OnInit {
               protected router: Router,
               @Inject(APP_CONFIG) protected appConfig: AppConfig,
               @Inject(PLATFORM_ID) public platformId: any,
-              public favorites: FavoritesService,
   ) {
     this.isXsOrSm$ = this.windowService.isXsOrSm();
   }

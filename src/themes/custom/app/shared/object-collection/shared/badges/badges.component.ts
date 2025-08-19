@@ -6,7 +6,6 @@ import { ThemedAccessStatusBadgeComponent } from '../../../../../../../app/share
 import { ThemedMyDSpaceStatusBadgeComponent } from '../../../../../../../app/shared/object-collection/shared/badges/my-dspace-status-badge/themed-my-dspace-status-badge.component';
 import { ThemedStatusBadgeComponent } from '../../../../../../../app/shared/object-collection/shared/badges/status-badge/themed-status-badge.component';
 import { ThemedTypeBadgeComponent } from '../../../../../../../app/shared/object-collection/shared/badges/type-badge/themed-type-badge.component';
-import { ThemedFavoritesBadgeComponent } from '../../../../../../../app/shared/object-collection/shared/badges/favorites-badge/themed-favorites-badge.component';
 
 @Component({
   selector: 'ds-themed-badges',
@@ -15,7 +14,7 @@ import { ThemedFavoritesBadgeComponent } from '../../../../../../../app/shared/o
   // templateUrl: './badges.component.html',
   templateUrl: '../../../../../../../app/shared/object-collection/shared/badges/badges.component.html',
   standalone: true,
-  imports: [ThemedStatusBadgeComponent, NgIf, ThemedMyDSpaceStatusBadgeComponent, ThemedTypeBadgeComponent, ThemedAccessStatusBadgeComponent, ThemedFavoritesBadgeComponent],
+  imports: [ThemedStatusBadgeComponent, NgIf, ThemedMyDSpaceStatusBadgeComponent, ThemedTypeBadgeComponent, ThemedAccessStatusBadgeComponent],
 })
 export class BadgesComponent extends BaseComponent {
 }
